@@ -70,7 +70,6 @@ All uploads and outputs stay isolated inside `workspace/`.
 | CPU Friendly         | Works with zero GPU requirements                        |
 | Ready for Deployment | Runs smoothly on Hugging Face Spaces                    |
 
----
 
 ## 🖼️ **Gradio UI**
 
@@ -182,6 +181,29 @@ Just insert your code inside:
 # PLACE YOUR PROCESSING LOGIC HERE
 ```
 
+# B-MOD Tri-OCR Demo
+
+This project provides an interactive OCR demo using **three engines**:
+- **TrOCR** (Transformer-based OCR)
+- **Tesseract OCR**
+- **EasyOCR**
+
+## Features
+- Upload a document image and get OCR outputs from all three models.
+- Compare results side by side.
+- Works on CPU (GPU optional if available).
+
+## How to run locally
+1. Install dependencies: `pip install -r requirements.txt`
+2. Run the script: `python app.py` (or in a Jupyter/Colab notebook)
+3. Upload an image to see the outputs.
+
+## Notes
+- TrOCR model weights are loaded automatically from Hugging Face Hub.
+- No need for Google Drive or local datasets.
+- Designed for demo and evaluation purposes. For large-scale OCR training, use datasets with ground-truth labels.
+
+---
 ---
 
 ## 🐞 **Challenges We Encountered**
